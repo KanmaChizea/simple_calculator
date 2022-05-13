@@ -10,9 +10,13 @@ class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
+    return const GetMaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      home: const Calculator(),
+      // theme: ThemeData(),
+      // darkTheme: ThemeData(
+      //     brightness: Brightness.dark, scaffoldBackgroundColor: Colors.black),
+      home: Calculator(),
     );
   }
 }
